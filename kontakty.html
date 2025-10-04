@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты и расписание - ВДА "Открытие"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>ВДА "Открытие"</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="novichku.html">Новичку</a></li>
+                    <li><a href="uchastniku.html">Участнику</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="obshchestvennost.html">Общественности</a></li>
+                    <li><a href="kontakty.html" class="active">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Контакты и расписание</h1>
+                    <p class="hero-subtitle">Вся информация о собраниях группы ВДА "Открытие" и способы связи с нами</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Расписание собраний -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Расписание собраний</h2>
+                <div class="schedule-preview">
+                    <h3>Регулярные собрания группы "Открытие"</h3>
+                    
+                    <div class="schedule-item">
+                        <span class="day">Понедельник</span>
+                        <span class="time">19:00 - 20:30</span>
+                        <span class="type">Открытое собрание</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="day">Среда</span>
+                        <span class="time">19:00 - 20:30</span>
+                        <span class="type">Работа по шагам</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="day">Пятница</span>
+                        <span class="time">19:00 - 20:30</span>
+                        <span class="type">Открытое собрание</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="day">Воскресенье</span>
+                        <span class="time">18:00 - 19:30</span>
+                        <span class="type">Собрание для новичков</span>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Открытые собрания</h3>
+                        <p>На открытых собраниях могут присутствовать все желающие, включая тех, кто только знакомится с программой ВДА. Здесь участники делятся своим опытом выздоровления.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Работа по шагам</h3>
+                        <p>На этих собраниях участники изучают и прорабатывают 12 шагов программы ВДА. Рекомендуется для тех, кто уже некоторое время посещает группу.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Собрания для новичков</h3>
+                        <p>Специальные собрания для тех, кто только начинает свой путь в ВДА. Здесь объясняются основы программы и отвечаются вопросы новичков.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Место проведения -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Место проведения собраний</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Адрес</h3>
+                        <p><strong>Центр "Взаимопомощь"</strong><br>
+                        Средний Староданиловский переулок, 3с2<br>
+                        г. Москва</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Как добраться</h3>
+                        <p>• Метро: м. Тульская (5 минут пешком)<br>
+                        • Автобус: остановка "Староданиловский переулок"<br>
+                        • Парковка: бесплатная парковка во дворе</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Условия</h3>
+                        <p>• Бесплатное участие<br>
+                        • Анонимность гарантирована<br>
+                        • Не нужно записываться заранее<br>
+                        • Доступность для людей с ограниченными возможностями</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контактная информация -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Контактная информация</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Основные контакты</h3>
+                        <p><strong>Телефон:</strong> +7-XXX-XXX-XX-XX<br>
+                        <strong>Email:</strong> vda-otkrytie@example.com<br>
+                        <strong>WhatsApp:</strong> +7-XXX-XXX-XX-XX<br>
+                        <strong>Telegram:</strong> @vda_otkrytie</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Время работы</h3>
+                        <p><strong>Пн-Пт:</strong> 10:00 - 18:00<br>
+                        <strong>Сб-Вс:</strong> 12:00 - 16:00<br>
+                        <strong>Экстренные случаи:</strong> круглосуточно</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Кому звонить</h3>
+                        <p><strong>Новичкам:</strong> +7-XXX-XXX-XX-XX (Анна)<br>
+                        <strong>Участникам:</strong> +7-XXX-XXX-XX-XX (Михаил)<br>
+                        <strong>Спонсорство:</strong> +7-XXX-XXX-XX-XX (Елена)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Онлайн собрания -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Онлайн собрания</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Zoom собрания</h3>
+                        <p>Для тех, кто не может посещать очные собрания, мы проводим онлайн встречи через Zoom.</p>
+                        <p><strong>Время:</strong> Вторник и Четверг, 20:00<br>
+                        <strong>Ссылка:</strong> Получить по запросу</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Группа в социальных сетях</h3>
+                        <p>У нас есть закрытая группа в социальных сетях для участников программы.</p>
+                        <p><strong>ВКонтакте:</strong> vk.com/vda_otkrytie<br>
+                        <strong>Facebook:</strong> facebook.com/groups/vda_otkrytie</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Как присоединиться к онлайн собраниям</h3>
+                        <p>1. Свяжитесь с нами по телефону или email<br>
+                        2. Получите ссылку на Zoom встречу<br>
+                        3. Присоединяйтесь к собранию в указанное время</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Часто задаваемые вопросы -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="faq">
+                    <div class="faq-item">
+                        <h3>Нужно ли записываться на собрание заранее?</h3>
+                        <p>Нет, записываться заранее не нужно. Просто приходите на собрание в указанное время. Если у вас есть вопросы, можете позвонить нам заранее.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Что делать, если я опоздал на собрание?</h3>
+                        <p>Можете присоединиться к собранию в любое время, но постарайтесь не мешать. Лучше прийти на следующее собрание вовремя.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Можно ли привести с собой друга или родственника?</h3>
+                        <p>Да, можете привести с собой близкого человека для поддержки, особенно на первое собрание. Но помните, что участие в обсуждениях — это личный выбор каждого.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Что делать, если собрание отменено?</h3>
+                        <p>Мы стараемся заранее уведомлять об отмене собраний через телефон или социальные сети. В случае сомнений, позвоните нам.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Есть ли собрания в праздничные дни?</h3>
+                        <p>В праздничные дни расписание может изменяться. Уточняйте актуальную информацию по телефону или в социальных сетях.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Карта -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Как нас найти</h2>
+                <div class="map-container">
+                    <div class="content-card">
+                        <h3>Схема проезда</h3>
+                        <p>Центр "Взаимопомощь" находится в Москве, в Среднем Староданиловском переулке.</p>
+                        <p><strong>От метро:</strong> м. Тульская (5 минут пешком)</p>
+                        <p><strong>На автомобиле:</strong> Парковка во дворе здания</p>
+                    </div>
+                    <!-- Интерактивная Яндекс карта -->
+                    <div class="content-card">
+                        <h3>На карте</h3>
+                        <div id="map" style="width: 100%; height: 300px; border-radius: 8px;"></div>
+                    </div>
+                    <div class="content-card">
+                        <h3>Контакты центра</h3>
+                        <p><strong>Администратор:</strong> +7-XXX-XXX-XX-XX<br>
+                        <strong>Email:</strong> center@example.com<br>
+                        <strong>Время работы центра:</strong> 8:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Призыв к действию -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-cta">
+                    <h3>Готовы начать свой путь к выздоровлению?</h3>
+                    <p>Приходите на ближайшее собрание или свяжитесь с нами для получения дополнительной информации</p>
+                    <div class="contact-buttons">
+                        <a href="tel:+7-XXX-XXX-XX-XX" class="btn btn-primary">Позвонить сейчас</a>
+                        <a href="mailto:vda-otkrytie@example.com" class="btn btn-secondary">Написать email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ВДА "Открытие"</h3>
+                    <p>Группа взаимопомощи для взрослых детей алкоголиков</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Телефон: +7-XXX-XXX-XX-XX</p>
+                    <p>Email: vda-otkrytie@example.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="novichku.html">Новичку</a></li>
+                        <li><a href="uchastniku.html">Участнику</a></li>
+                        <li><a href="kontakty.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ВДА "Открытие". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        // Инициализация Яндекс карты
+        ymaps.ready(init);
+        
+        function init() {
+            // Создание карты
+            var myMap = new ymaps.Map("map", {
+                center: [55.715, 37.625], // Координаты Среднего Староданиловского переулка, 3с2
+                zoom: 16
+            });
+            
+            // Создание метки
+            var myPlacemark = new ymaps.Placemark([55.715, 37.625], {
+                balloonContentHeader: 'ВДА "Открытие"',
+                balloonContentBody: 'г. Москва, Средний Староданиловский переулок, 3с2',
+                balloonContentFooter: 'Группа взаимопомощи',
+                hintContent: 'ВДА "Открытие"'
+            });
+            
+            // Добавление метки на карту
+            myMap.geoObjects.add(myPlacemark);
+            
+            // Открытие балуна при загрузке
+            myPlacemark.balloon.open();
+        }
+    </script>
+</body>
+</html>
